@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Task Manager</h1>
+            <p>Organize your tasks and stay productive!</p>
+        </header>
+
+        <section class="task-input">
+            <form id="taskForm">
+                <input type="text" id="taskInput" placeholder="Enter a task..." required minlength="3">
+                <button type="submit" id="addButton">Add Task</button>
+            </form>
+            <p id="errorMessage" class="error hidden">Task must be at least 3 characters!</p>
+        </section>
+
+        <section class="task-list">
+            <ul id="taskList">
+                <!-- Tasks will be added dynamically -->
+            </ul>
+        </section>
+
+        <footer>
+            <p>&copy; 2025 Task Manager. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
